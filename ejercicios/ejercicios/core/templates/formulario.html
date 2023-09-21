@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTO ES DJANGO</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">    
+</head>
+<body>
+    <h1> DJANGO INFO {{request.session.jazi}} </h1>
+    <form method="POST">
+        {% csrf_token %}
+        <Label>Nombre: </label>
+        <input type="text" name="nombre">
+        <input type="submit" value="enviar">
+</html>

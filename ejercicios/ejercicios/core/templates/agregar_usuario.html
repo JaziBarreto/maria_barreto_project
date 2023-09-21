@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block titulo %}PERFIL{% endblock %}
+
+{% block estilos %}
+<style>
+    /*Fondo personalizado */
+    body {
+        background-color: #9D76C1;
+    }
+    /* Estilo para el formulario */
+    .registro-form {
+      background-color: #fff; /* Fondo blanco */
+        padding: 20px;
+      border-radius: 5px; /* Bordes redondeados */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    }
+</style>
+{% endblock %}
+
+{% block menu %}
+{% endblock %}
+
+{% block contenido %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="registro-form">
+                <h2 class="mb-4">Registro de Perfil</h2>
+                <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-light">Crear Perfil</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

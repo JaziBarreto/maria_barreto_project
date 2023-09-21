@@ -1,0 +1,14 @@
+/* Cambia el color de fondo de la barra de navegación */
+#header {
+    background-color: #007bff; /* Cambia esto al color que prefieras */
+}
+
+/* Cambia el color del texto y los enlaces en la barra de navegación */
+#header .module h1, #header .module h1 a {
+    color: #fff; /* Cambia esto al color que prefieras */
+}
+
+/* Cambia el color de fondo de los botones en la barra de navegación */
+#header .module .module-tools input[type="submit"] {
+    background-color: #007bff; /* Cambia esto al color que prefieras */
+}
